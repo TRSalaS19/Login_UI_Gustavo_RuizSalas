@@ -26,13 +26,17 @@
           <a href="#" class="toggleNav">☰ Menu</a>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Meet the Staff</a></li>
+            <li><a href="#">Staff</a></li>
           </ul>
         </nav>
       </header>
       <div class="login">
+        <img
+          src="https://res.cloudinary.com/imagesforapi/image/upload/v1676660265/samples/SeaSide_kt2phl.png"
+          alt="Seaside travel co logo"
+        />
         <h1>Welcome</h1>
         <h3>Please Login</h3>
         <form action="" class="login_form">
@@ -53,7 +57,7 @@
     <script>
       $(function () {
         $(".toggleNav").on("click", function () {
-          $(".navbar ul").toggleClass("open");
+          $(".navbar ul,.login, header, footer").toggleClass("open");
         });
       });
     </script>
