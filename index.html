@@ -37,12 +37,12 @@
           src="https://res.cloudinary.com/imagesforapi/image/upload/v1676660265/samples/SeaSide_kt2phl.png"
           alt="Seaside travel co logo"
         />
-        <h1>Welcome</h1>
-        <h3>Please Login</h3>
+        <h3>Login</h3>
         <form action="" class="login_form">
           <input type="username" placeholder="Username" />
           <input type="password" placeholder="Password" />
-          <input class="submit_button" type="submit" value="Sign me up!" />
+          <input class="submit_button" type="submit" value="Login" />
+          <a href="#">Forgot password?</a>
         </form>
       </div>
       <footer>
@@ -57,7 +57,9 @@
     <script>
       $(function () {
         $(".toggleNav").on("click", function () {
-          $(".navbar ul,.login, header, footer").toggleClass("open");
+          $(".navbar ul,.login, header, footer, .toggleNav").toggleClass(
+            "open"
+          );
         });
       });
     </script>
